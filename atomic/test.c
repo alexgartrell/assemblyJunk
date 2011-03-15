@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-
-extern int atomic_add(int *, int);
+#include <atomic.h>
 
 int main()
 {
