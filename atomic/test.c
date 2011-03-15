@@ -8,5 +8,9 @@ int main()
     
     assert(atomic_add(&x, 10) == 10);
     assert(x == 20);
+
+    assert(atomic_xchg(&x, 30) == 20);
+    assert(x == 30);
+
     return 0;
 }
